@@ -4,7 +4,7 @@
 ### 0. 아나콘다 설치 
 구글 -> anaconda download 검색 -> 검색시 나오는 첫번째 사이트에서 윈도우용 설치
 ![image](https://github.com/user-attachments/assets/38f58b90-48c0-4740-acfe-0da4f1cbc382)
-
+설치시 위 사진처럼 체크 선택
 
 ### 1. 아나콘다 프롬프트 실행
 시작 메뉴 → **Anaconda Prompt** 실행
