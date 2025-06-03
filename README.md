@@ -11,3 +11,9 @@ conda create -n ll_env python=3.12
 conda activate ll_env
 ### 3. 해당 폴더로 이동
 cd 경로\ksj_page
+### 4. 장고 설치
+conda install django
+### 5. 서버 실행
+python manage.py runserver
+### 6. 웹 접속
+http://127.0.0.1:8000
