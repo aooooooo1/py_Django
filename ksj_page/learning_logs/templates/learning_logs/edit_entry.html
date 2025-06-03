@@ -1,0 +1,12 @@
+{% extends 'learning_logs/base.html' %}
+
+{% block content %}
+    <p>entry편집 페이지</p>
+    <p><a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}로 돌아가기</a></p>
+
+    <form action="{% url 'learning_logs:edit_entry' entry.id %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button name="submit">엔트리편집완료</button>
+    </form>
+{% endblock content %}

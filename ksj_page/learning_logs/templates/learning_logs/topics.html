@@ -1,0 +1,24 @@
+{% extends 'learning_logs/base.html' %}
+
+{% block content %}
+<h2 style="font-size: 1.5rem; color: #4F46E5;">📝 방명록</h2>
+
+<div style="margin-bottom: 2rem;">
+    <a href="{% url 'learning_logs:new_topic' %}" style="text-decoration: none;">
+        <button style="padding: 0.5rem 1rem; background-color: #4F46E5; color: white; border: none; border-radius: 5px;">방명록 글 남기기</button>
+    </a>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 1rem;">
+    {% for topic in topics %}
+    <div style="border: 1px solid #ddd; padding: 1rem; border-radius: 8px; background-color: #f9f9f9;">
+        <p style="margin: 0; font-weight: bold;">작성자: {{ topic.owner }}</p>
+        <p style="margin: 0.5rem 0;">{{ topic.text }}</p>
+        <p style="font-size: 0.8rem; color: #888;">{{ topic.date_added|date:"Y년 m월 d일 H:i" }}</p>
+        <a href="{% url 'learning_logs:topic' topic.id %}" style="font-size: 0.9rem; color: #4F46E5;">💬 댓글 보기</a>
+    </div>
+    {% empty %}
+    <p>아직 방명록이 없습니다. 첫 글을 남겨보세요!</p>
+    {% endfor %}
+</div>
+{% endblock content %}

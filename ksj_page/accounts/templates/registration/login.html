@@ -1,0 +1,15 @@
+{% extends 'learning_logs/base.html' %}
+{% block content %}
+    <p>로그인페이지 입니다.</p>
+
+    {% if form.errors %}
+        <p>정보가 맞지 않습니다. 다시 시도해주세요</p>
+    {% endif %}
+
+    <form action="{% url 'accounts:login' %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button name="submit">로그인 하기</button>
+    </form>
+
+{% endblock content %}

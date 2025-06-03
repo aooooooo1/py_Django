@@ -1,0 +1,32 @@
+{% extends 'learning_logs/base.html' %}
+
+{% block content %}
+<h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: #4F46E5;">📒 {{ topic.text }}</h2>
+
+
+
+<div style="display: flex; flex-direction: column; gap: 1rem;">
+    {% for entry in entries %}
+    <div style="border-left: 4px solid #4F46E5; padding: 1rem; background-color: #f9f9f9; border-radius: 5px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong>🗨️ {{ entry.date_added|date:"Y년 m월 d일 H:i" }}</strong>
+            <a href="#" style="font-size: 0.85rem; color: #aaa;">수정</a>
+        </div>
+        <p style="margin-top: 0.5rem;">{{ entry.text|linebreaks }}</p>
+    </div>
+    {% empty %}
+    <p>아직 글이 없습니다. 첫 항목을 추가해보세요!</p>
+    {% endfor %}
+</div>
+
+<hr style="margin: 2rem 0;">
+
+
+<form action="{% url 'learning_logs:new_entry' topic.id %}" method="post" style="margin-top: 1rem;">
+    {% csrf_token %}
+    {{ form.as_div }}
+    <button style="margin-top: 1rem; padding: 0.5rem 1rem; background-color: #4F46E5; color: white; border: none; border-radius: 5px;">
+        등록하기
+    </button>
+</form>
+{% endblock content %}

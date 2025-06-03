@@ -1,0 +1,11 @@
+{% extends 'learning_logs/base.html' %}
+{% block content %}
+    <p>인사전하기</p>
+
+<!--    폼으로 제출된 데이터를 new_toic으로 보냄-->
+    <form action="{% url 'learning_logs:new_topic' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button name="submit">토픽추가</button>
+    </form>
+{% endblock content %}

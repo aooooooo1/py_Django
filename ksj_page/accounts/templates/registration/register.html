@@ -1,0 +1,11 @@
+{% extends 'learning_logs/base.html' %}
+{% block content %}
+    <p>등록페이지입니다.</p>
+
+    <form action="{% url 'accounts:register' %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button name="submit">등록 하기</button>
+    </form>
+
+{% endblock content %}
