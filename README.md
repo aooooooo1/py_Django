@@ -7,7 +7,7 @@
 ### 2. 깃퍼브 폴더 설치 및 환경설정
 ![image](https://github.com/user-attachments/assets/e5eb66e5-1e23-4c7a-bad6-4a316c5626c6)  
 
-기존 폴더 설치하면  
+깃압축폴더 설치 후 압축해제 시  
 C:\Users\사용자이름\Downloads\py_Django-main\py_Django-main\ksj_page 또는  
 C:\Users\사용자이름\Downloads\py_Django-main\ksj_page
 으로 설치되는데  
