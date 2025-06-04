@@ -12,7 +12,7 @@ C:\Users\pdqov\Downloads\py_Django-main\py_Django-main\ksj_page -> 폴더 이동
 
 
 ### 2. 가상환경 생성 및 활성화
-conda create -n ll_env python=3.12
+conda create -n ll_env python=3.12 \n
 conda activate ll_env
 ### 3. 해당 폴더로 이동
 cd 경로\ksj_page
