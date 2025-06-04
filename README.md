@@ -11,8 +11,10 @@
 C:\Users\사용자이름\Downloads\py_Django-main\py_Django-main\ksj_page 또는  
 C:\Users\사용자이름\Downloads\py_Django-main\ksj_page
 으로 설치되는데  
+  
 ksj_page를 **C:\USER\사용자이름\** 로 이동  
-(이동안하고 C:\Users\사용자이름\Downloads 경로에서 환경설정해도 되지만 여기서는 교수님과 같은 경로로 지정하여 진행)
+  
+(이동안하고 C:\Users\사용자이름\Downloads 경로에서 환경설정해도 되지만 여기서는 교수님과 같은 경로로 지정하여 진행)  
 ### 3. 아나콘다 프롬프트 실행
 시작 메뉴 → **Anaconda Prompt** 실행
 
