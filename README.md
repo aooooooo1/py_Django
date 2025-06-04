@@ -20,7 +20,7 @@ ksj_page 폴더를 **C:\Users\사용자이름\\** 로 이동
 
 
 ### 4. 가상환경 생성
-conda create -n ll_env python=3.12  
+```conda create -n ll_env python=3.12```  
 **설치 중 나오는 모든 질문에 y 엔터**  
 ### 5. 가상환경 활성화
 conda activate ll_env  
