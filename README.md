@@ -25,7 +25,7 @@ ksj_page 폴더를 **C:\Users\사용자이름\\** 로 이동
 ### 5. 가상환경 활성화
 ```conda activate ll_env```  
 ### 6. 해당 폴더로 이동
-```cd C:\USER\사용자이름\ksj_page```  
+```cd C:\Users\사용자이름\ksj_page```  
 ### 7. 장고 설치
 ```conda install django```  
 **설치 중 나오는 모든 질문에 y 엔터**  
