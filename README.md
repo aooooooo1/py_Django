@@ -4,7 +4,9 @@
 구글 -> anaconda download 검색 -> 검색시 나오는 첫번째 사이트에서 윈도우용 설치
 ![image](https://github.com/user-attachments/assets/38f58b90-48c0-4740-acfe-0da4f1cbc382)
 설치시 위 사진처럼 체크 선택
-### 2. 환경설정
+### 2. 깃퍼브 폴더 설치 및 환경설정
+![image](https://github.com/user-attachments/assets/e5eb66e5-1e23-4c7a-bad6-4a316c5626c6)  
+
 기존 폴더 설치하면 C:\Users\pdqov\Downloads\py_Django-main\py_Django-main\ksj_page 으로 설치되는데  
 위 경로의 ksj_page를 C:\USER\사용자이름\ 로 이동
 ### 3. 아나콘다 프롬프트 실행
