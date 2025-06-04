@@ -14,11 +14,13 @@
 
 ### 2. 가상환경 생성 및 활성화
 conda create -n ll_env python=3.12  
+설치 중 나오는 모든 질문에 y 엔터  
 conda activate ll_env
 ### 3. 해당 폴더로 이동
 cd C:\USER\사용자이름/\ksj_page
 ### 4. 장고 설치
-conda install django
+conda install django  
+설치 중 나오는 모든 질문에 y 엔터  
 ### 5. 서버 실행
 python manage.py runserver
 ### 6. 웹 접속
